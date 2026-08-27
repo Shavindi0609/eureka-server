@@ -24,11 +24,11 @@
 
 spring:
   application:
-    name: eureka-
+    name: eureka-server
 
   config:
     import: "configserver:"
 
   cloud:
     config:
-      uri: http://config.platform:8888/
+      uri: http://config.platform:8888
