@@ -24,9 +24,10 @@
 
 spring:
   application:
-    name: eureka-server
+    name: eureka-
+
   config:
-    import: "optional:configserver:http://localhost:8888"
+    import: "configserver:"
 
   cloud:
     config:
