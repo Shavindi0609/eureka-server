@@ -1,3 +1,27 @@
+#spring:
+#  application:
+#    name: eureka-server
+#  config:
+#    import: "optional:configserver:http://localhost:8888"
+#
+#  cloud:
+#    config:
+#      uri: http://config.platform:8888
+#
+#
+#server:
+#  port: 8761
+#
+#eureka:
+#  client:
+#    register-with-eureka: false    # Eureka Server එක තමන්ම තමන්ට රෙජිස්ටර් වීම වළක්වයි
+#    fetch-registry: false          # වෙනත් සර්විස් වලින් රෙජිස්ට්‍රි ඩවුන්ලෝඩ් කරගැනීම අවශ්‍ය නැත
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  server:
+#    enable-self-preservation: false
+
+
 spring:
   application:
     name: eureka-server
@@ -6,17 +30,4 @@ spring:
 
   cloud:
     config:
-      uri: http://config.platform:8888
-
-
-server:
-  port: 8761
-
-eureka:
-  client:
-    register-with-eureka: false    # Eureka Server එක තමන්ම තමන්ට රෙජිස්ටර් වීම වළක්වයි
-    fetch-registry: false          # වෙනත් සර්විස් වලින් රෙජිස්ට්‍රි ඩවුන්ලෝඩ් කරගැනීම අවශ්‍ය නැත
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  server:
-    enable-self-preservation: false
+      uri: http://config.platform:8888/
